@@ -1,5 +1,13 @@
 # Agent Shoebox Instructions
 
+## Template Maintenance
+
+- This public repository is the Agent Shoebox template. Do not commit real
+  conversation records generated while maintaining the template itself.
+- Keep template-maintenance records in the maintainer's own private workspace.
+  The archive workflow below is for repositories that use Agent Shoebox to store
+  their own records.
+
 ## Conversation Archive
 
 - For every substantive conversation in this repository, use the repo-local

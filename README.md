@@ -8,6 +8,10 @@ the redacted conversation sidecars that explain how those artefacts were
 produced. Raw hook captures can stay local for summarisation; they do not belong
 in git.
 
+This public repository is the template. Keep it free of real conversation
+records; downstream users can archive their own sessions after they copy or clone
+it.
+
 ## What It Gives You
 
 - Current dated notes at the repo root, named `yyyy-mm-dd Title.md`.
