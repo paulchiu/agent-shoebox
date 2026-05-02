@@ -1,12 +1,12 @@
 # Agent Shoebox
 
-Agent Shoebox is a small, agent-agnostic repository pattern for keeping useful
-working context from AI agent sessions without committing raw transcripts.
+Agent Shoebox is a small, agent-agnostic pattern for keeping useful context from
+AI agent sessions without committing raw transcripts.
 
-It is designed for notes, decisions, investigation results, generated drafts,
-and the redacted conversation sidecars that explain how those artefacts were
-produced. Raw hook captures can be kept locally for summarisation, but they stay
-out of git.
+It is designed for notes, decisions, investigation results, generated drafts, and
+the redacted conversation sidecars that explain how those artefacts were
+produced. Raw hook captures can stay local for summarisation; they do not belong
+in git.
 
 ## What It Gives You
 
@@ -20,8 +20,9 @@ out of git.
 ## Quick Start
 
 Clone or copy this repository, then work in it with your preferred coding agent.
-The shared behaviour is documented in `AGENTS.md`; agents that understand local
-skills can use `.agents/skills/agent-shoebox-archive/SKILL.md`.
+The shared behaviour is documented in [AGENTS.md](AGENTS.md). Agents that
+understand local skills can use
+[`.agents/skills/agent-shoebox-archive/SKILL.md`](.agents/skills/agent-shoebox-archive/SKILL.md).
 
 For a substantive session, ask the agent to archive the useful record before it
 finishes. The archive should include the original ask, decisions, rationale,
@@ -67,10 +68,10 @@ visible in a fresh clone. Raw capture content and copied transcripts are ignored
 Hook capture is optional. It is useful when an agent can invoke a local command
 at session start, user prompt submission, stop, or notification time.
 
-See `docs/agent-hooks.md` for examples. The capture script stores local JSONL
-records under `.agent-shoebox/raw/`; those records are private source material
-for archive summaries and should not be committed.
+See [docs/agent-hooks.md](docs/agent-hooks.md) for examples. The capture script
+stores local JSONL records under `.agent-shoebox/raw/`; those records are private
+source material for archive summaries and should not be committed.
 
 ## License
 
-MIT. See `LICENSE`.
+MIT. See [LICENSE](LICENSE).
