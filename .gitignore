@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.env.*
+*.log
+__pycache__/
+*.py[cod]
+
+# Local agent capture. Keep the folder shape, not the private records.
+.agent-shoebox/raw/*
+!.agent-shoebox/raw/.gitignore
+.agent-shoebox/transcripts/*
+!.agent-shoebox/transcripts/.gitignore
+
+# Local Claude project settings commonly contain absolute paths.
+!.claude/
+.claude/settings.json
+!.claude/settings.example.json

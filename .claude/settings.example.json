@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<AGENT_SHOEBOX_REPO>/.agents/skills/agent-shoebox-archive/scripts/capture_hook_event.py --app claude --event SessionStart --project <AGENT_SHOEBOX_REPO>"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<AGENT_SHOEBOX_REPO>/.agents/skills/agent-shoebox-archive/scripts/capture_hook_event.py --app claude --event UserPromptSubmit --project <AGENT_SHOEBOX_REPO>"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<AGENT_SHOEBOX_REPO>/.agents/skills/agent-shoebox-archive/scripts/capture_hook_event.py --app claude --event Stop --project <AGENT_SHOEBOX_REPO>"
+          }
+        ]
+      }
+    ]
+  }
+}

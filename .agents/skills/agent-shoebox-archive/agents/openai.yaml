@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Shoebox Archive"
+  short_description: "Create dated agent conversation notes and commit them."
+  default_prompt: "Archive this Agent Shoebox conversation as a dated document and commit it."
